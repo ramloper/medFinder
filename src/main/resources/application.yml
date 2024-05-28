@@ -1,0 +1,26 @@
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: sa
+    password: sa
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+      default_batch_fetch_size: 100
+logging:
+  level:
+    '[com.triplea.triplea]': DEBUG # DEBUG 레벨부터 에러 확인할 수 있게 설정하기
+    '[org.hibernate.type]': TRACE # 콘솔 쿼리에 ? 에 주입된 값 보기
