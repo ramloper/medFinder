@@ -22,16 +22,4 @@ public class UserService {
                 .build();
         return user2;
     }
-
-
-//    public UserResponse.UserOnlyId getUserOnlyId(Long id){
-//        User userPS = userRepository.findById(id).orElseThrow(
-//                new Exception("미안한데 ID 없어");
-//        );
-//
-////        UserResponse.UserOnlyId  userOnlyId = UserResponse.UserOnlyId.toDto(userPS.getName());
-//
-//        return null;
-//
-//    }
 }
