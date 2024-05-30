@@ -1,4 +1,4 @@
-package com.urban.MedFinder.dto.response;
+package com.urban.MedFinder.dto.response.user;
 
 public class UserResponse {
     private String id;
